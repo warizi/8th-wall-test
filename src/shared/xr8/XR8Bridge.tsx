@@ -72,6 +72,9 @@ export function XR8Bridge() {
       }
       if (cancelled) return
 
+      // 개발 모드: SLAM 특징점 수신 (WorldPointsDebug 시각화용)
+      if (import.meta.env.DEV) XR8.XrController.configure({enableWorldPoints: true})
+
       XR8.run({
         canvas: gl.domElement,
         allowedDevices: XR8.XrConfig.device().ANY,

@@ -21,6 +21,12 @@ export type XR8Reality = {
     intrinsics?: number[]
     trackingStatus?: string
     trackingReason?: string
+    /** enableWorldPoints 설정 시 매 프레임 오는 SLAM 특징점들 */
+    worldPoints?: Array<{
+      id?: number
+      confidence?: number
+      position: {x: number; y: number; z: number}
+    }>
   }
 }
 
@@ -36,7 +42,12 @@ export type XR8Api = {
     recenter: () => void
     updateCameraProjectionMatrix?: (opts: {origin: unknown; facing: unknown}) => void
     /** 이미지 타겟 등록 — image-target-cli가 생성한 메타데이터 JSON 배열 */
-    configure: (opts: {imageTargetData?: unknown[]; disableWorldTracking?: boolean}) => void
+    configure: (opts: {
+      imageTargetData?: unknown[]
+      disableWorldTracking?: boolean
+      /** reality.worldPoints로 SLAM 특징점 수신 */
+      enableWorldPoints?: boolean
+    }) => void
   }
   XrConfig: {device: () => {ANY: unknown; MOBILE: unknown}}
   [key: string]: unknown

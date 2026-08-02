@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "lastUpdated": "2026-08-02T14:19:49.098Z",
+  "lastUpdated": "2026-08-02T14:43:43.901Z",
   "activeFeatures": [
     "8th-wall",
     "xr8",
@@ -39,9 +39,9 @@
       "documents": {},
       "timestamps": {
         "started": "2026-08-02T08:03:58.838Z",
-        "lastUpdated": "2026-08-02T14:19:18.116Z"
+        "lastUpdated": "2026-08-02T14:33:52.705Z"
       },
-      "lastFile": "/Users/jinseunghyeon/Desktop/jin/학습 프로젝트/8th-wall/src/shared/xr8/r3fPipelineModule.ts"
+      "lastFile": "/Users/jinseunghyeon/Desktop/jin/학습 프로젝트/8th-wall/src/shared/xr8/WorldPointsDebug.tsx"
     },
     "ar-experience": {
       "phase": "do",
@@ -65,7 +65,7 @@
       "documents": {},
       "timestamps": {
         "started": "2026-08-02T08:05:39.982Z",
-        "lastUpdated": "2026-08-02T14:02:50.787Z"
+        "lastUpdated": "2026-08-02T14:26:50.879Z"
       },
       "lastFile": "/Users/jinseunghyeon/Desktop/jin/학습 프로젝트/8th-wall/src/widgets/ar-canvas/ARCanvas.tsx"
     },
@@ -78,7 +78,7 @@
       "documents": {},
       "timestamps": {
         "started": "2026-08-02T08:40:16.100Z",
-        "lastUpdated": "2026-08-02T14:19:32.841Z"
+        "lastUpdated": "2026-08-02T14:37:29.764Z"
       },
       "lastFile": "/Users/jinseunghyeon/Desktop/jin/학습 프로젝트/8th-wall/src/features/place-character/ImageTargetSpawn.tsx"
     },
@@ -91,7 +91,7 @@
       "documents": {},
       "timestamps": {
         "started": "2026-08-02T08:40:27.259Z",
-        "lastUpdated": "2026-08-02T14:10:25.788Z"
+        "lastUpdated": "2026-08-02T14:43:43.901Z"
       },
       "lastFile": "/Users/jinseunghyeon/Desktop/jin/학습 프로젝트/8th-wall/src/entities/character/WanderingGhost.tsx"
     },
@@ -182,7 +182,7 @@
   "session": {
     "startedAt": "2026-08-02T07:53:17.744Z",
     "onboardingCompleted": false,
-    "lastActivity": "2026-08-02T14:19:49.098Z"
+    "lastActivity": "2026-08-02T14:43:43.901Z"
   },
   "history": [
     {
@@ -1256,6 +1256,108 @@
     {
       "timestamp": "2026-08-02T14:19:49.098Z",
       "feature": "ar-experience",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T14:26:25.390Z",
+      "feature": "xr8",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T14:26:28.209Z",
+      "feature": "xr8",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T14:26:31.203Z",
+      "feature": "xr8",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T14:26:39.265Z",
+      "feature": "xr8",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T14:26:42.112Z",
+      "feature": "xr8",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T14:26:45.393Z",
+      "feature": "xr8",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T14:26:47.737Z",
+      "feature": "ar-canvas",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T14:26:50.879Z",
+      "feature": "ar-canvas",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T14:31:00.663Z",
+      "feature": "xr8",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T14:31:09.090Z",
+      "feature": "xr8",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T14:31:11.450Z",
+      "feature": "xr8",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T14:33:52.705Z",
+      "feature": "xr8",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T14:37:23.075Z",
+      "feature": "place-character",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T14:37:29.764Z",
+      "feature": "place-character",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T14:40:43.236Z",
+      "feature": "character",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T14:42:42.598Z",
+      "feature": "character",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T14:43:43.901Z",
+      "feature": "character",
       "phase": "do",
       "action": "updated"
     }

@@ -8,6 +8,7 @@ import {GroundPlacement} from '@/features/place-character/GroundPlacement'
 import {ImageTargetSpawn} from '@/features/place-character/ImageTargetSpawn'
 import {usePlacementStore} from '@/features/place-character/placementStore'
 import {XR8ImageAnchor} from '@/shared/xr8/imageTargetBridge'
+import {WorldPointsDebug} from '@/shared/xr8/WorldPointsDebug'
 import {XR8Bridge} from '@/shared/xr8/XR8Bridge'
 
 /**
@@ -35,6 +36,7 @@ export function ARCanvas() {
       <XR8Bridge />
       <GroundPlacement />
       <ImageTargetSpawn />
+      {import.meta.env.DEV && <WorldPointsDebug />}
       <Suspense fallback={null}>
         {/* 대화 상대 — floor: 토글된 모델, image: 카드 옆 공중을 떠다니는 고스트 */}
         {placed &&

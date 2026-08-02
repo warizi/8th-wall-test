@@ -2,6 +2,7 @@ import * as THREE from 'three'
 import {debugStatus} from './debugStatus'
 import {useTrackingStore} from './trackingStore'
 import type {CameraPipelineModule, XR8Reality} from './types'
+import {worldPointsRef} from './WorldPointsDebug'
 import {useXRStatusStore} from './xrStatusStore'
 
 type Deps = {
@@ -54,6 +55,9 @@ export const r3fPipelineModule = ({gl, camera, advance}: Deps): CameraPipelineMo
       if (!reality) return
       // 첫 SLAM 프레임 → 로딩 게이트 해제
       if (updateCount >= 1) useXRStatusStore.getState().setReady()
+
+      // 특징점 공유 (WorldPointsDebug 시각화용 — 렌더는 useFrame에서)
+      if (reality.worldPoints) worldPointsRef.points = reality.worldPoints
 
       // 트래킹 품질 상태 공유 (배치 게이트/안내 문구용 — 변할 때만 set)
       {
