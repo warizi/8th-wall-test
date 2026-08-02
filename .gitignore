@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.DS_Store
+*.local
+
+# 8th Wall 엔진은 npm에서 sync-xr 스크립트로 복사됨 (원본 재배포 제약 — 저장소에 커밋하지 않음)
+public/external/
