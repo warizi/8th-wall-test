@@ -1,4 +1,5 @@
 import type {ClipName} from '@/entities/character/animationStore'
+import {asset} from '@/shared/lib/asset'
 
 export type DialogueChoice = {
   label: string
@@ -19,7 +20,7 @@ export type DialogueGraph = {
   nodes: Record<string, DialogueNode>
 }
 
-export async function loadDialogue(url = '/dialogue/script.json'): Promise<DialogueGraph> {
+export async function loadDialogue(url = asset('dialogue/script.json')): Promise<DialogueGraph> {
   const res = await fetch(url)
   if (!res.ok) throw new Error(`대화 스크립트 로드 실패: ${res.status}`)
   const graph = (await res.json()) as DialogueGraph

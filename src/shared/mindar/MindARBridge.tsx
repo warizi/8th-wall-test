@@ -2,10 +2,11 @@ import {useFrame, useThree} from '@react-three/fiber'
 import {useEffect, useRef} from 'react'
 import * as THREE from 'three'
 import {create} from 'zustand'
+import {asset} from '@/shared/lib/asset'
 import {debugStatus} from '@/shared/xr8/debugStatus'
 import {useXRStatusStore} from '@/shared/xr8/xrStatusStore'
 
-const TARGET_URL = '/targets/card.mind' // 지점별 사이니지 타겟으로 교체 예정
+const TARGET_URL = asset('targets/card.mind') // 지점별 사이니지 타겟으로 교체 예정
 
 /** 타겟 인식 상태 (UI/대화 트리거용 — 행렬은 성능상 mutable ref로 전달) */
 export const useMindARStore = create<{targetFound: boolean}>(() => ({

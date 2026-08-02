@@ -6,6 +6,8 @@ import {VitePWA} from 'vite-plugin-pwa'
 // 엔진(xr.js 등)은 public/external/ 자체 호스팅 — 번들 대상에서 제외됨.
 // basicSsl: 실기기 카메라 테스트용 로컬 HTTPS (자체 서명 — 폰에서 경고 1회 통과 필요)
 export default defineConfig({
+  // GitHub Pages 등 하위 경로 배포용 — CI에서 BASE_PATH=/저장소명/ 으로 주입
+  base: process.env.BASE_PATH ?? '/',
   plugins: [
     react(),
     basicSsl(),
@@ -54,11 +56,12 @@ export default defineConfig({
         orientation: 'portrait',
         background_color: '#000000',
         theme_color: '#000000',
+        // 하위 경로 배포 대응: manifest 기준 상대 경로
         icons: [
-          {src: '/icons/icon-192.png', sizes: '192x192', type: 'image/png'},
-          {src: '/icons/icon-512.png', sizes: '512x512', type: 'image/png'},
+          {src: 'icons/icon-192.png', sizes: '192x192', type: 'image/png'},
+          {src: 'icons/icon-512.png', sizes: '512x512', type: 'image/png'},
           {
-            src: '/icons/icon-512.png',
+            src: 'icons/icon-512.png',
             sizes: '512x512',
             type: 'image/png',
             purpose: 'maskable',

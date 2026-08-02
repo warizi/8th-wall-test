@@ -1,4 +1,5 @@
 import {create} from 'zustand'
+import {asset} from '@/shared/lib/asset'
 
 /**
  * 캐릭터 모델 토글 — 런타임 전환 (새로고침 없음).
@@ -21,14 +22,14 @@ export const MODELS: Record<
   }
 > = {
   character: {
-    url: '/models/character.glb',
+    url: asset('models/character.glb'),
     label: '기본',
     mindarScale: 0.55,
     mindarOffsetY: -0.4,
     shadowRadius: 0.45,
   },
   ghost: {
-    url: '/models/ghost.glb',
+    url: asset('models/ghost.glb'),
     label: '고스트',
     mindarScale: 0.9,
     mindarOffsetY: -0.45,

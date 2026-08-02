@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "lastUpdated": "2026-08-02T10:05:29.746Z",
+  "lastUpdated": "2026-08-02T10:28:25.231Z",
   "activeFeatures": [
     "8th-wall",
     "xr8",
@@ -26,7 +26,7 @@
       "documents": {},
       "timestamps": {
         "started": "2026-08-02T08:03:25.879Z",
-        "lastUpdated": "2026-08-02T09:49:53.373Z"
+        "lastUpdated": "2026-08-02T10:28:25.231Z"
       },
       "lastFile": "/Users/jinseunghyeon/Desktop/jin/학습 프로젝트/8th-wall/vite.config.ts"
     },
@@ -91,9 +91,9 @@
       "documents": {},
       "timestamps": {
         "started": "2026-08-02T08:40:27.259Z",
-        "lastUpdated": "2026-08-02T10:05:02.646Z"
+        "lastUpdated": "2026-08-02T10:28:14.850Z"
       },
-      "lastFile": "/Users/jinseunghyeon/Desktop/jin/학습 프로젝트/8th-wall/src/entities/character/Character.tsx"
+      "lastFile": "/Users/jinseunghyeon/Desktop/jin/학습 프로젝트/8th-wall/src/entities/character/modelConfig.ts"
     },
     "dialogue": {
       "phase": "do",
@@ -104,7 +104,7 @@
       "documents": {},
       "timestamps": {
         "started": "2026-08-02T08:56:58.692Z",
-        "lastUpdated": "2026-08-02T08:56:58.692Z"
+        "lastUpdated": "2026-08-02T10:28:21.917Z"
       },
       "lastFile": "/Users/jinseunghyeon/Desktop/jin/학습 프로젝트/8th-wall/src/entities/dialogue/types.ts"
     },
@@ -169,7 +169,7 @@
       "documents": {},
       "timestamps": {
         "started": "2026-08-02T09:48:30.243Z",
-        "lastUpdated": "2026-08-02T09:56:54.750Z"
+        "lastUpdated": "2026-08-02T10:28:18.137Z"
       },
       "lastFile": "/Users/jinseunghyeon/Desktop/jin/학습 프로젝트/8th-wall/src/shared/mindar/MindARBridge.tsx"
     }
@@ -182,7 +182,7 @@
   "session": {
     "startedAt": "2026-08-02T07:53:17.744Z",
     "onboardingCompleted": false,
-    "lastActivity": "2026-08-02T10:05:29.746Z"
+    "lastActivity": "2026-08-02T10:28:25.231Z"
   },
   "history": [
     {
@@ -806,6 +806,60 @@
     {
       "timestamp": "2026-08-02T10:05:29.746Z",
       "feature": "ar-experience",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T10:28:01.869Z",
+      "feature": "8th-wall",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T10:28:06.770Z",
+      "feature": "8th-wall",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T10:28:11.582Z",
+      "feature": "character",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T10:28:13.424Z",
+      "feature": "character",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T10:28:14.850Z",
+      "feature": "character",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T10:28:18.137Z",
+      "feature": "mindar",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T10:28:20.021Z",
+      "feature": "dialogue",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T10:28:21.917Z",
+      "feature": "dialogue",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T10:28:25.231Z",
+      "feature": "8th-wall",
       "phase": "do",
       "action": "updated"
     }
