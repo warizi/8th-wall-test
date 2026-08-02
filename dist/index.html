@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- viewport-fit=cover: 노치/홈바 safe-area 대응 -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
+    />
+    <title>AR 캐릭터 대화 체험</title>
+
+    <!-- iOS PWA -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <link rel="apple-touch-icon" href="/icons/icon-180.png" />
+
+    <!--
+      This product includes the XR Engine software developed by Niantic Spatial, Inc.
+      Copyright © 2026 Niantic Spatial, Inc. All rights reserved.
+      Licensed under the XR Engine License Agreement — see /external/xr/LICENSE.
+      엔진 파일은 라이선스 조건에 따라 수정 없이 자체 호스팅한다 (public/external/).
+    -->
+    <script src="/external/xr/xr.js"></script>
+    <script type="module" crossorigin src="/assets/index-hFFTyBFV.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-BdhN_dLe.css">
+  <link rel="manifest" href="/manifest.webmanifest"><script id="vite-plugin-pwa:register-sw" src="/registerSW.js"></script></head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

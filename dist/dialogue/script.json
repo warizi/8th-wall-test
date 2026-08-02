@@ -1,0 +1,63 @@
+{
+  "meta": {"version": 1, "start": "intro", "speakerName": "코코"},
+  "nodes": {
+    "intro": {
+      "speaker": "character",
+      "text": "안녕! 난 코코야. 여기 살고 있어. 너는 처음 보는 얼굴인데?",
+      "animation": "Wave",
+      "choices": [
+        {"label": "너는 누구야?", "next": "who"},
+        {"label": "여긴 어디야?", "next": "where"}
+      ]
+    },
+    "who": {
+      "speaker": "character",
+      "text": "난 이 공간의 안내인 코코야. 만나서 반가워!",
+      "animation": "Talk",
+      "choices": [
+        {"label": "반가워!", "next": "nice"},
+        {"label": "안녕히 가", "next": "outro"}
+      ]
+    },
+    "where": {
+      "speaker": "character",
+      "text": "여긴 네가 캐릭터를 불러낸 바로 그 공간이지. 신기하지 않아?",
+      "animation": "Talk",
+      "choices": [
+        {"label": "구경시켜줘", "next": "tour"},
+        {"label": "안녕히 가", "next": "outro"}
+      ]
+    },
+    "nice": {
+      "speaker": "character",
+      "text": "히히, 나도! 궁금한 게 있으면 뭐든 물어봐.",
+      "animation": "Talk",
+      "choices": [
+        {"label": "구경시켜줘", "next": "tour"},
+        {"label": "안녕히 가", "next": "outro"}
+      ]
+    },
+    "tour": {
+      "speaker": "character",
+      "text": "좋아, 따라와! …라고 하고 싶지만 아직 여기밖에 못 보여줘. 다음에 더 멀리 가보자!",
+      "animation": "Walk",
+      "choices": [{"label": "고마워", "next": "thanks"}]
+    },
+    "thanks": {
+      "speaker": "character",
+      "text": "천만에! 또 궁금한 거 있어?",
+      "animation": "Talk",
+      "choices": [
+        {"label": "너는 누구야?", "next": "who"},
+        {"label": "안녕히 가", "next": "outro"}
+      ]
+    },
+    "outro": {
+      "speaker": "character",
+      "text": "응, 또 놀러 와! 다음에 봐!",
+      "animation": "Wave",
+      "choices": [],
+      "end": true
+    }
+  }
+}
