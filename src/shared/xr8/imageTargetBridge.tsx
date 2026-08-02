@@ -51,7 +51,7 @@ function setFound(found: boolean) {
 
 // 손떨림으로 imagelost→imagefound가 짧게 반복되면 캐릭터가 깜빡인다 —
 // 잃은 뒤에도 유예 시간 동안 마지막 포즈로 유지하고, 그 안에 재인식되면 이어간다.
-const LOST_GRACE_MS = 5000
+const LOST_GRACE_MS = 500
 let lostTimer: ReturnType<typeof setTimeout> | null = null
 
 function cancelPendingLost() {

@@ -110,7 +110,7 @@ export function ARExperiencePage() {
             >
               ↺ {source === 'floor' ? '다시 배치' : '다시 대화'}
             </button>
-            <DialoguePanel />
+            <DialoguePanel speechInWorld={source === 'image'} />
           </>
         )}
         <div

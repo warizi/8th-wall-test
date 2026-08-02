@@ -10,6 +10,7 @@ import {usePlacementStore} from '@/features/place-character/placementStore'
 import {XR8ImageAnchor} from '@/shared/xr8/imageTargetBridge'
 import {WorldPointsDebug} from '@/shared/xr8/WorldPointsDebug'
 import {XR8Bridge} from '@/shared/xr8/XR8Bridge'
+import {SpeechBubble3D} from '@/widgets/dialogue-panel/SpeechBubble3D'
 
 /**
  * AR 캔버스 조립 위젯.
@@ -43,7 +44,9 @@ export function ARCanvas() {
           (source === 'floor' ? (
             <Character key={modelKey} position={placed} rotationY={rotationY} />
           ) : (
-            <WanderingGhost origin={placed} />
+            <WanderingGhost origin={placed}>
+              <SpeechBubble3D />
+            </WanderingGhost>
           ))}
       </Suspense>
       <XR8ImageAnchor>

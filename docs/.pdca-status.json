@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "lastUpdated": "2026-08-02T14:43:43.901Z",
+  "lastUpdated": "2026-08-02T15:09:29.783Z",
   "activeFeatures": [
     "8th-wall",
     "xr8",
@@ -39,9 +39,9 @@
       "documents": {},
       "timestamps": {
         "started": "2026-08-02T08:03:58.838Z",
-        "lastUpdated": "2026-08-02T14:33:52.705Z"
+        "lastUpdated": "2026-08-02T15:09:29.783Z"
       },
-      "lastFile": "/Users/jinseunghyeon/Desktop/jin/학습 프로젝트/8th-wall/src/shared/xr8/WorldPointsDebug.tsx"
+      "lastFile": "/Users/jinseunghyeon/Desktop/jin/학습 프로젝트/8th-wall/src/shared/xr8/imageTargetBridge.tsx"
     },
     "ar-experience": {
       "phase": "do",
@@ -52,7 +52,7 @@
       "documents": {},
       "timestamps": {
         "started": "2026-08-02T08:04:04.559Z",
-        "lastUpdated": "2026-08-02T14:19:49.098Z"
+        "lastUpdated": "2026-08-02T15:00:33.990Z"
       },
       "lastFile": "/Users/jinseunghyeon/Desktop/jin/학습 프로젝트/8th-wall/src/pages/ar-experience/ARExperiencePage.tsx"
     },
@@ -65,7 +65,7 @@
       "documents": {},
       "timestamps": {
         "started": "2026-08-02T08:05:39.982Z",
-        "lastUpdated": "2026-08-02T14:26:50.879Z"
+        "lastUpdated": "2026-08-02T15:00:38.680Z"
       },
       "lastFile": "/Users/jinseunghyeon/Desktop/jin/학습 프로젝트/8th-wall/src/widgets/ar-canvas/ARCanvas.tsx"
     },
@@ -91,7 +91,7 @@
       "documents": {},
       "timestamps": {
         "started": "2026-08-02T08:40:27.259Z",
-        "lastUpdated": "2026-08-02T14:43:43.901Z"
+        "lastUpdated": "2026-08-02T15:02:40.567Z"
       },
       "lastFile": "/Users/jinseunghyeon/Desktop/jin/학습 프로젝트/8th-wall/src/entities/character/WanderingGhost.tsx"
     },
@@ -130,9 +130,9 @@
       "documents": {},
       "timestamps": {
         "started": "2026-08-02T08:57:40.727Z",
-        "lastUpdated": "2026-08-02T08:57:40.727Z"
+        "lastUpdated": "2026-08-02T15:06:36.137Z"
       },
-      "lastFile": "/Users/jinseunghyeon/Desktop/jin/학습 프로젝트/8th-wall/src/widgets/dialogue-panel/DialoguePanel.tsx"
+      "lastFile": "/Users/jinseunghyeon/Desktop/jin/학습 프로젝트/8th-wall/src/widgets/dialogue-panel/SpeechBubble3D.tsx"
     },
     "permission-gate": {
       "phase": "do",
@@ -182,7 +182,7 @@
   "session": {
     "startedAt": "2026-08-02T07:53:17.744Z",
     "onboardingCompleted": false,
-    "lastActivity": "2026-08-02T14:43:43.901Z"
+    "lastActivity": "2026-08-02T15:09:29.783Z"
   },
   "history": [
     {
@@ -1358,6 +1358,126 @@
     {
       "timestamp": "2026-08-02T14:43:43.901Z",
       "feature": "character",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T14:51:22.111Z",
+      "feature": "character",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T14:51:30.780Z",
+      "feature": "character",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T14:52:30.782Z",
+      "feature": "character",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T14:55:48.012Z",
+      "feature": "character",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T14:56:55.890Z",
+      "feature": "xr8",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T15:00:04.364Z",
+      "feature": "dialogue-panel",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T15:00:06.818Z",
+      "feature": "character",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T15:00:12.890Z",
+      "feature": "character",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T15:00:14.795Z",
+      "feature": "character",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T15:00:27.316Z",
+      "feature": "dialogue-panel",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T15:00:32.209Z",
+      "feature": "dialogue-panel",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T15:00:33.991Z",
+      "feature": "ar-experience",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T15:00:35.898Z",
+      "feature": "ar-canvas",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T15:00:38.680Z",
+      "feature": "ar-canvas",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T15:02:40.567Z",
+      "feature": "character",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T15:04:56.981Z",
+      "feature": "dialogue-panel",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T15:05:05.343Z",
+      "feature": "dialogue-panel",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T15:05:59.749Z",
+      "feature": "dialogue-panel",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T15:06:36.137Z",
+      "feature": "dialogue-panel",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T15:09:29.783Z",
+      "feature": "xr8",
       "phase": "do",
       "action": "updated"
     }
