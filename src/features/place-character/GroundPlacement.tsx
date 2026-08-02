@@ -17,7 +17,7 @@ export function GroundPlacement() {
     const p = e.point
     // 캐릭터가 탭 순간의 카메라를 바라보도록
     const rotationY = Math.atan2(camera.position.x - p.x, camera.position.z - p.z)
-    place([p.x, 0, p.z], rotationY)
+    place([p.x, 0, p.z], rotationY, 'floor')
   }
 
   return (

@@ -1,6 +1,7 @@
 import {useThree} from '@react-three/fiber'
 import {useEffect} from 'react'
 import {debugStatus} from './debugStatus'
+import {configureImageTargets, imageTargetPipelineModule} from './imageTargetBridge'
 import {r3fPipelineModule} from './r3fPipelineModule'
 import type {CameraPipelineModule} from './types'
 import {useXRStatusStore} from './xrStatusStore'
@@ -47,7 +48,7 @@ export function XR8Bridge() {
   useEffect(() => {
     let cancelled = false
 
-    const start = () => {
+    const start = async () => {
       const XR8 = window.XR8!
       if (cancelled || engineStarted) return
       engineStarted = true
@@ -57,10 +58,19 @@ export function XR8Bridge() {
       // Loading의 검은 커버가 해제되지 않는 문제 확인, 로딩/폴백 UI는 자체 구현.
       XR8.addCameraPipelineModules([
         XR8.GlTextureRenderer.pipelineModule(), // 카메라 피드 렌더
-        XR8.XrController.pipelineModule(), // SLAM (World Tracking)
+        XR8.XrController.pipelineModule(), // SLAM (World Tracking + Image Targets)
         diagnosticsModule,
         r3fPipelineModule({gl, camera, advance}),
+        imageTargetPipelineModule(),
       ])
+
+      // 로컬 컴파일 이미지 타겟 등록 — 실패해도 바닥 배치는 살아야 하므로 계속 진행
+      try {
+        await configureImageTargets()
+      } catch (e) {
+        debugStatus('xr8img', `타겟 등록 실패 (바닥 배치만 가능): ${e}`)
+      }
+      if (cancelled) return
 
       XR8.run({
         canvas: gl.domElement,

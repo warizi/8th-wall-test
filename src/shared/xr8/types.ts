@@ -20,6 +20,7 @@ export type XR8Reality = {
     position: {x: number; y: number; z: number}
     intrinsics?: number[]
     trackingStatus?: string
+    trackingReason?: string
   }
 }
 
@@ -34,6 +35,8 @@ export type XR8Api = {
     pipelineModule: () => CameraPipelineModule
     recenter: () => void
     updateCameraProjectionMatrix?: (opts: {origin: unknown; facing: unknown}) => void
+    /** 이미지 타겟 등록 — image-target-cli가 생성한 메타데이터 JSON 배열 */
+    configure: (opts: {imageTargetData?: unknown[]; disableWorldTracking?: boolean}) => void
   }
   XrConfig: {device: () => {ANY: unknown; MOBILE: unknown}}
   [key: string]: unknown

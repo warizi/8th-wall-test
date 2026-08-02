@@ -13,10 +13,10 @@ export const MODELS: Record<
   {
     url: string
     label: string
-    /** mindar 모드에서 마커 단위(1 = 마커 폭) 대비 스케일 */
-    mindarScale: number
-    /** mindar 모드에서 마커 중앙 기준 y 오프셋 */
-    mindarOffsetY: number
+    /** 이미지 타겟 모드에서 앵커(타겟 크기) 대비 배율 */
+    markerScale: number
+    /** 이미지 타겟 모드에서 타겟 중앙 기준 y 오프셋 */
+    markerOffsetY: number
     /** 블롭 섀도우 반경 (m) */
     shadowRadius: number
   }
@@ -24,15 +24,15 @@ export const MODELS: Record<
   character: {
     url: asset('models/character.glb'),
     label: '기본',
-    mindarScale: 0.55,
-    mindarOffsetY: -0.4,
+    markerScale: 0.55,
+    markerOffsetY: -0.4,
     shadowRadius: 0.45,
   },
   ghost: {
     url: asset('models/ghost.glb'),
     label: '고스트',
-    mindarScale: 0.9,
-    mindarOffsetY: -0.45,
+    markerScale: 0.9,
+    markerOffsetY: -0.45,
     shadowRadius: 0.5,
   },
 }

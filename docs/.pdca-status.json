@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "lastUpdated": "2026-08-02T10:28:25.231Z",
+  "lastUpdated": "2026-08-02T14:19:49.098Z",
   "activeFeatures": [
     "8th-wall",
     "xr8",
@@ -26,7 +26,7 @@
       "documents": {},
       "timestamps": {
         "started": "2026-08-02T08:03:25.879Z",
-        "lastUpdated": "2026-08-02T10:28:25.231Z"
+        "lastUpdated": "2026-08-02T13:38:53.693Z"
       },
       "lastFile": "/Users/jinseunghyeon/Desktop/jin/학습 프로젝트/8th-wall/vite.config.ts"
     },
@@ -39,9 +39,9 @@
       "documents": {},
       "timestamps": {
         "started": "2026-08-02T08:03:58.838Z",
-        "lastUpdated": "2026-08-02T09:10:38.300Z"
+        "lastUpdated": "2026-08-02T14:19:18.116Z"
       },
-      "lastFile": "/Users/jinseunghyeon/Desktop/jin/학습 프로젝트/8th-wall/src/shared/xr8/XR8Bridge.tsx"
+      "lastFile": "/Users/jinseunghyeon/Desktop/jin/학습 프로젝트/8th-wall/src/shared/xr8/r3fPipelineModule.ts"
     },
     "ar-experience": {
       "phase": "do",
@@ -52,7 +52,7 @@
       "documents": {},
       "timestamps": {
         "started": "2026-08-02T08:04:04.559Z",
-        "lastUpdated": "2026-08-02T10:05:29.746Z"
+        "lastUpdated": "2026-08-02T14:19:49.098Z"
       },
       "lastFile": "/Users/jinseunghyeon/Desktop/jin/학습 프로젝트/8th-wall/src/pages/ar-experience/ARExperiencePage.tsx"
     },
@@ -65,7 +65,7 @@
       "documents": {},
       "timestamps": {
         "started": "2026-08-02T08:05:39.982Z",
-        "lastUpdated": "2026-08-02T10:05:22.571Z"
+        "lastUpdated": "2026-08-02T14:02:50.787Z"
       },
       "lastFile": "/Users/jinseunghyeon/Desktop/jin/학습 프로젝트/8th-wall/src/widgets/ar-canvas/ARCanvas.tsx"
     },
@@ -78,9 +78,9 @@
       "documents": {},
       "timestamps": {
         "started": "2026-08-02T08:40:16.100Z",
-        "lastUpdated": "2026-08-02T08:41:13.201Z"
+        "lastUpdated": "2026-08-02T14:19:32.841Z"
       },
-      "lastFile": "/Users/jinseunghyeon/Desktop/jin/학습 프로젝트/8th-wall/src/features/place-character/GroundPlacement.tsx"
+      "lastFile": "/Users/jinseunghyeon/Desktop/jin/학습 프로젝트/8th-wall/src/features/place-character/ImageTargetSpawn.tsx"
     },
     "character": {
       "phase": "do",
@@ -91,9 +91,9 @@
       "documents": {},
       "timestamps": {
         "started": "2026-08-02T08:40:27.259Z",
-        "lastUpdated": "2026-08-02T10:28:14.850Z"
+        "lastUpdated": "2026-08-02T14:10:25.788Z"
       },
-      "lastFile": "/Users/jinseunghyeon/Desktop/jin/학습 프로젝트/8th-wall/src/entities/character/modelConfig.ts"
+      "lastFile": "/Users/jinseunghyeon/Desktop/jin/학습 프로젝트/8th-wall/src/entities/character/WanderingGhost.tsx"
     },
     "dialogue": {
       "phase": "do",
@@ -156,7 +156,7 @@
       "documents": {},
       "timestamps": {
         "started": "2026-08-02T09:48:26.162Z",
-        "lastUpdated": "2026-08-02T09:48:26.162Z"
+        "lastUpdated": "2026-08-02T13:38:20.181Z"
       },
       "lastFile": "/Users/jinseunghyeon/Desktop/jin/학습 프로젝트/8th-wall/src/shared/ar-engine/engineConfig.ts"
     },
@@ -169,7 +169,7 @@
       "documents": {},
       "timestamps": {
         "started": "2026-08-02T09:48:30.243Z",
-        "lastUpdated": "2026-08-02T10:28:18.137Z"
+        "lastUpdated": "2026-08-02T13:20:36.518Z"
       },
       "lastFile": "/Users/jinseunghyeon/Desktop/jin/학습 프로젝트/8th-wall/src/shared/mindar/MindARBridge.tsx"
     }
@@ -182,7 +182,7 @@
   "session": {
     "startedAt": "2026-08-02T07:53:17.744Z",
     "onboardingCompleted": false,
-    "lastActivity": "2026-08-02T10:28:25.231Z"
+    "lastActivity": "2026-08-02T14:19:49.098Z"
   },
   "history": [
     {
@@ -860,6 +860,402 @@
     {
       "timestamp": "2026-08-02T10:28:25.231Z",
       "feature": "8th-wall",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T13:20:21.655Z",
+      "feature": "mindar",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T13:20:36.518Z",
+      "feature": "mindar",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T13:32:57.794Z",
+      "feature": "ar-engine",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T13:33:06.952Z",
+      "feature": "xr8",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T13:33:27.843Z",
+      "feature": "xr8",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T13:33:33.669Z",
+      "feature": "xr8",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T13:33:45.584Z",
+      "feature": "xr8",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T13:34:08.811Z",
+      "feature": "ar-canvas",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T13:34:13.907Z",
+      "feature": "ar-experience",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T13:34:21.235Z",
+      "feature": "ar-experience",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T13:34:28.015Z",
+      "feature": "ar-experience",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T13:34:32.905Z",
+      "feature": "ar-experience",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T13:34:43.018Z",
+      "feature": "8th-wall",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T13:38:20.181Z",
+      "feature": "ar-engine",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T13:38:31.816Z",
+      "feature": "ar-canvas",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T13:38:45.133Z",
+      "feature": "ar-experience",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T13:38:49.927Z",
+      "feature": "ar-experience",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T13:38:52.265Z",
+      "feature": "ar-experience",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T13:38:53.693Z",
+      "feature": "8th-wall",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T13:41:27.914Z",
+      "feature": "place-character",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T13:41:36.890Z",
+      "feature": "place-character",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T13:41:48.033Z",
+      "feature": "xr8",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T13:41:49.765Z",
+      "feature": "xr8",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T13:42:01.331Z",
+      "feature": "ar-canvas",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T13:42:21.249Z",
+      "feature": "ar-experience",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T13:45:02.755Z",
+      "feature": "xr8",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T13:46:11.757Z",
+      "feature": "xr8",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T13:47:22.355Z",
+      "feature": "xr8",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T13:54:53.565Z",
+      "feature": "character",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T13:54:57.297Z",
+      "feature": "character",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T13:55:01.483Z",
+      "feature": "character",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T13:55:06.995Z",
+      "feature": "ar-canvas",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T13:55:11.996Z",
+      "feature": "ar-canvas",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T13:55:21.931Z",
+      "feature": "ar-canvas",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T13:59:43.846Z",
+      "feature": "character",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T13:59:50.147Z",
+      "feature": "xr8",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T13:59:56.441Z",
+      "feature": "place-character",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T14:00:11.703Z",
+      "feature": "ar-canvas",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T14:00:18.012Z",
+      "feature": "ar-experience",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T14:00:20.365Z",
+      "feature": "ar-experience",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T14:00:24.904Z",
+      "feature": "ar-experience",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T14:02:42.754Z",
+      "feature": "character",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T14:02:46.394Z",
+      "feature": "ar-canvas",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T14:02:50.787Z",
+      "feature": "ar-canvas",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T14:07:06.437Z",
+      "feature": "place-character",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T14:07:35.195Z",
+      "feature": "character",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T14:07:38.831Z",
+      "feature": "character",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T14:08:46.723Z",
+      "feature": "place-character",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T14:09:42.600Z",
+      "feature": "character",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T14:10:14.174Z",
+      "feature": "place-character",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T14:10:15.803Z",
+      "feature": "character",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T14:10:24.004Z",
+      "feature": "character",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T14:10:25.788Z",
+      "feature": "character",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T14:11:42.732Z",
+      "feature": "place-character",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T14:11:42.892Z",
+      "feature": "place-character",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T14:13:55.983Z",
+      "feature": "xr8",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T14:19:02.170Z",
+      "feature": "xr8",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T14:19:03.434Z",
+      "feature": "xr8",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T14:19:14.008Z",
+      "feature": "xr8",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T14:19:18.116Z",
+      "feature": "xr8",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T14:19:23.298Z",
+      "feature": "place-character",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T14:19:27.500Z",
+      "feature": "place-character",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T14:19:32.841Z",
+      "feature": "place-character",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T14:19:35.897Z",
+      "feature": "ar-experience",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T14:19:43.233Z",
+      "feature": "ar-experience",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-08-02T14:19:49.098Z",
+      "feature": "ar-experience",
       "phase": "do",
       "action": "updated"
     }

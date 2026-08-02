@@ -1,5 +1,6 @@
 import * as THREE from 'three'
 import {debugStatus} from './debugStatus'
+import {useTrackingStore} from './trackingStore'
 import type {CameraPipelineModule, XR8Reality} from './types'
 import {useXRStatusStore} from './xrStatusStore'
 
@@ -53,6 +54,17 @@ export const r3fPipelineModule = ({gl, camera, advance}: Deps): CameraPipelineMo
       if (!reality) return
       // 첫 SLAM 프레임 → 로딩 게이트 해제
       if (updateCount >= 1) useXRStatusStore.getState().setReady()
+
+      // 트래킹 품질 상태 공유 (배치 게이트/안내 문구용 — 변할 때만 set)
+      {
+        const status = reality.trackingStatus ?? 'UNSPECIFIED'
+        const reason = reality.trackingReason ?? 'UNSPECIFIED'
+        const prev = useTrackingStore.getState()
+        if (prev.status !== status || prev.reason !== reason) {
+          useTrackingStore.setState({status, reason})
+          debugStatus('tracking', `${status}/${reason}`)
+        }
+      }
 
       const {rotation, position, intrinsics} = reality
 

@@ -20,7 +20,7 @@ export default defineConfig({
         globPatterns: [
           '**/*.{js,css,html,ico,svg,png,webmanifest}',
           'models/*.glb',
-          'targets/*.mind',
+          'targets/xr8/*.json',
           'external/xr/xr.js',
           'external/xr/xr-slam.js',
         ],

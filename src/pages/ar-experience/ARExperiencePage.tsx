@@ -3,13 +3,10 @@ import {MODELS, useModelStore} from '@/entities/character/modelConfig'
 import {loadDialogue} from '@/entities/dialogue/types'
 import {usePlacementStore} from '@/features/place-character/placementStore'
 import {useDialogueStore} from '@/features/play-dialogue/dialogueStore'
-import {getAREngine, switchAREngine} from '@/shared/ar-engine/engineConfig'
-import {useMindARStore} from '@/shared/mindar/MindARBridge'
+import {isTrackingBlocked, useTrackingStore} from '@/shared/xr8/trackingStore'
 import {ARCanvas} from '@/widgets/ar-canvas/ARCanvas'
 import {DialoguePanel} from '@/widgets/dialogue-panel/DialoguePanel'
 import {LoadingGate} from '@/widgets/permission-gate/LoadingGate'
-
-const engine = getAREngine()
 
 const pillButton: React.CSSProperties = {
   pointerEvents: 'auto',
@@ -34,14 +31,22 @@ function ModelToggleButton() {
 }
 
 /**
- * 메인 AR 페이지.
- * xr8   : 바닥 탭 배치 → 대화 시작
- * mindar: 타겟 이미지 인식 → 대화 시작
+ * 메인 AR 페이지 — 단일 세션에서 두 배치 방식 동시 대기.
+ * 바닥 탭 배치(월드 트래킹) 또는 타겟 이미지 인식 중 먼저 일어난 쪽 → 대화 시작.
  */
 export function ARExperiencePage() {
   const placed = usePlacementStore((s) => s.position)
+  const source = usePlacementStore((s) => s.source)
   const resetPlacement = usePlacementStore((s) => s.reset)
-  const targetFound = useMindARStore((s) => s.targetFound)
+  const trackingStatus = useTrackingStore((s) => s.status)
+  const trackingReason = useTrackingStore((s) => s.reason)
+
+  // 트래킹 품질에 따른 안내 문구 — NORMAL 전엔 스캔 유도
+  const hint = !isTrackingBlocked(trackingStatus)
+    ? '바닥을 탭해 캐릭터를 불러내거나, 타겟 이미지를 비춰보세요'
+    : trackingReason === 'RELOCALIZING'
+      ? '트래킹을 다시 잡는 중이에요 — 조금 전 보던 곳을 천천히 비춰주세요'
+      : '주변을 천천히 둘러보며 비춰주세요'
 
   // 대화 스크립트 로드 (배치 전에 미리)
   useEffect(() => {
@@ -50,14 +55,7 @@ export function ARExperiencePage() {
       .catch((e) => console.error('[dialogue]', e))
   }, [])
 
-  // mindar: 타겟이 인식되어 있고 미배치 상태면 "배치됨" 처리 → 대화 트리거
-  // ("다시 대화" 후에도 타겟이 보이는 동안 즉시 재시작되도록 placed도 의존)
-  useEffect(() => {
-    if (engine === 'mindar' && targetFound && !placed) {
-      usePlacementStore.getState().place([0, 0, 0], 0)
-    }
-  }, [targetFound, placed])
-
+  // 이미지 인식 → 배치 트리거는 ImageTargetSpawn(Canvas 내부)이 담당.
   // 배치되면 대화 시작, 재배치하면 리셋
   useEffect(() => {
     const dialogue = useDialogueStore.getState()
@@ -96,9 +94,7 @@ export function ARExperiencePage() {
               textShadow: '0 1px 3px rgba(0,0,0,.7)',
             }}
           >
-            {engine === 'xr8'
-              ? '바닥을 천천히 비춘 뒤, 화면을 탭해서 캐릭터를 불러내세요'
-              : '타겟 이미지를 화면에 비춰보세요'}
+            {hint}
           </p>
         )}
         {placed && (
@@ -112,7 +108,7 @@ export function ARExperiencePage() {
                 left: 12,
               }}
             >
-              ↺ {engine === 'xr8' ? '다시 배치' : '다시 대화'}
+              ↺ {source === 'floor' ? '다시 배치' : '다시 대화'}
             </button>
             <DialoguePanel />
           </>
@@ -128,12 +124,6 @@ export function ARExperiencePage() {
             alignItems: 'flex-end',
           }}
         >
-          <button
-            onClick={() => switchAREngine(engine === 'xr8' ? 'mindar' : 'xr8')}
-            style={{...pillButton, fontSize: 12, opacity: 0.85}}
-          >
-            엔진: {engine === 'xr8' ? '8th Wall' : 'MindAR'} ⇄
-          </button>
           <ModelToggleButton />
         </div>
       </div>

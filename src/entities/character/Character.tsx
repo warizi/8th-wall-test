@@ -3,7 +3,7 @@ import {useEffect, useRef} from 'react'
 import * as THREE from 'three'
 import {useAnimationStore} from './animationStore'
 import {BlobShadow} from './BlobShadow'
-import {MODELS, useModelStore} from './modelConfig'
+import {MODELS, type ModelKey, useModelStore} from './modelConfig'
 
 const FADE = 0.28 // crossfade 시간(s) — 하드 스위치는 뚝 끊기는 느낌을 줌
 
@@ -16,12 +16,16 @@ const FADE = 0.28 // crossfade 시간(s) — 하드 스위치는 뚝 끊기는 �
 export function Character({
   position,
   rotationY = 0,
+  modelKey,
 }: {
   position: [number, number, number]
   /** 배치 시 카메라를 바라보도록 하는 y축 회전 (rad) */
   rotationY?: number
+  /** 지정 시 토글 스토어를 무시하고 이 모델로 고정 */
+  modelKey?: ModelKey
 }) {
-  const MODEL = MODELS[useModelStore((s) => s.key)]
+  const storeKey = useModelStore((s) => s.key)
+  const MODEL = MODELS[modelKey ?? storeKey]
   const group = useRef<THREE.Group>(null)
   const {scene, animations} = useGLTF(MODEL.url)
   const {actions, mixer} = useAnimations(animations, group)
